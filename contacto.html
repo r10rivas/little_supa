@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Little_Zoo</title>
+  <link rel="icon" href="img/browserr.png">
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light|Architects+Daughter' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="iconos/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!--boton para dispositivos moviles-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-rr" >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--marca de pagina-->
+        <a class="navbar-brand" href="#">Little Zoo</a>
+      </div>
+      <!--menu-->
+      <div class="collapse navbar-collapse" id="navegacion-rr">
+        <ul class="nav navbar-nav navbar-right menu">
+          <li><a href="index.html"><i class="icon icon-home"></i> Home</a></li>
+          <li><a href="biografia.html"><i class="icon icon-book"></i> Biografía</a></li>
+          <li><a href="galeria.html"><i class="icon icon-camera"></i> Galeria</a></li>
+          <li><a href="contacto.html"><i class="icon icon-envelope"></i> Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">IMjhgafifldkj</h1>
+      <article class="col-md-3"></article>
+      <article class="col-md-6">
+        <h2 class="text-center">Imagenes</h2>
+        <img id ="cualquier" class="img-responsive img-thumbnail" src="img/galeria_1.jpg">
+        <div id="botones">
+          <div class="btn btn-danger btn-lg" id ="atras" onclick="elegir_color()"> <<< Atrás </div>
+          <div class="btn btn-danger btn-lg" id="adelante" onclick="mover_imagen('adelante')" >Adelante >>></div>
+        </div>
+      </article>
+      <article class="col-md-3">
+        <p id="otro-parrafo"><em>Éste</em> es un párrafo con un <strong>elemento destacado</strong> en su interior.
+        </p>
+      </article>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">IMjhgafifldkj</h1>
+      <article class="col-md-3"></article>
+      <article class="col-md-6">
+        <h2 class="text-center">Imagenes</h2>
+        <img id ="cualquier" class="img-responsive img-thumbnail" src="img/galeria_1.jpg">
+        <div id="botones">
+          <div class="btn btn-danger btn-lg" id ="atras" onclick="mover_imagen('atras')"> <<< Atrás </div>
+          <div class="btn btn-danger btn-lg" id="adelante" onclick="mover_imagen('adelante')" >Adelante >>></div>
+        </div>
+      </article>
+      <article class="col-md-3">
+        <p id="otro-parrafo"><em>Éste</em> es un párrafo con un <strong>elemento destacado</strong> en su interior.
+        </p>
+      </article>
+    </div>
+  </div>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/little_zoo.js"></script>
+</body>
+</html>

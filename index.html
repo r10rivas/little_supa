@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Little_Zoo</title>
+    <link rel="icon" href="img/browserr.png">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light|Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="iconos/styles.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body onload="alert('Completada la carga de la página')">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!--boton para dispositivos moviles-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-rr" >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--marca de pagina-->
+          <a class="navbar-brand" href="#" onclick="elegir_color()">Little Zoo</a>
+        </div>
+        <!--menu-->
+        <div class="collapse navbar-collapse" id="navegacion-rr">
+          <ul class="nav navbar-nav navbar-right menu">
+            <li><a href="index.html"><i class="icon icon-home"></i> Home</a></li>
+            <li><a href="biografia.html"><i class="icon icon-book"></i> Biografía</a></li>
+            <li><a href="galeria.html"><i class="icon icon-camera"></i> Galeria</a></li>
+            <li><a href="contacto.html"><i class="icon icon-envelope"></i> Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--portada-->
+    <section class="portada">
+      <div class="container">
+        <h1>Little Zoo</h1>
+      </div>
+    </section>
+    <!--video y presentaciones-->
+    <!-- videoclip -->
+    <div class="container">
+      <div class="row">
+        <article class="col-sm-8 col-xs-12">
+          <H1 class="text-center padding_h1">Ultimo videoclip</H1>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/cf5FFrndALM" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </article>
+        <!--Eventos-->
+        <article class="col-sm-4 eventos">
+          <H1 class="text-center padding_h1">Eventos</H1>
+          <!--presentaciones en el exterior-->
+          <div class="en_exterior">
+            <h3>En el exterior <i class="icon icon-flight"></i></h3>
+            <!-- modal madrid -->
+            <div id="modal_madrid" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content flipInY">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center">Presentaciones en Madrid</h4>
+                  </div>
+                  <div class="modal-body ">
+                    <P>Fecha: 07/10/2016</P>
+                    <p>Lugar: Parque Cultural de la Cibeles / al lado de la plaza la Cibeles</p>
+                    <p>Cover: 10$</p>
+                    <P><a href="https://facebook.com" target="blank">Contacto</a></P>
+                    <img class="img-responsive " src="img/club_madrid.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modal_madrid">
+              Madrid
+            </button>
+            <!-- modal paris -->
+            <div id="modal_paris" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content flipInY">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center">Presentaciones en Paris</h4>
+                  </div>
+                  <div class="modal-body">
+                    <P>Fecha: 07/10/2016</P>
+                    <p>Lugar: Parque Cultural de la Cibeles / al lado de la plaza la Cibeles</p>
+                    <p>Cover: 10$</p>
+                    <P><a href="https://facebook.com" target="blank">Contacto</a></P>
+                    <img class="img-responsive" src="img/club_paris.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modal_paris">
+            Paris
+            </button>
+          </div>
+          <!-- presentaciones en venezuela -->
+          <hr class="separador">
+          <div class="en_venezuela">
+            <h3>En Venezuela</h3>
+            <!-- modal Valencia -->
+            <div id="modal_valencia" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center">Presentaciones en Velencia</h4>
+                  </div>
+                  <div class="modal-body">
+                    <P>Fecha: 07/10/2016</P>
+                    <p>Lugar: Parque Cultural de la Cibeles / al lado de la plaza la Cibeles</p>
+                    <p>Cover: 10$</p>
+                    <P><a href="https://facebook.com" target="blank">Contacto</a></P>
+                    <img class="img-responsive img-rounded" src="img/valencia.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modal_valencia"> Valencia
+            </button>
+            <!-- modal Maracay -->
+            <div id="modal_maracay" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center">Presentaciones en Maracay</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                    <!-- Nav tabs -->
+                      <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#primera" aria-controls="home" role="tab" data-toggle="tab">1 Agosto</a></li>
+                      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">4 Septiembre</a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">7 Septiembre</a></li>
+                      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">10 Octubre</a></li>
+                    </ul>
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="primera">
+                          <br>
+                          <br>
+                          <P>Fecha: 07/10/2016</P>
+                          <p>Lugar: Parque Cultural de la Cibeles / al lado de la plaza la Cibeles</p>
+                          <p>Cover: 10$</p>
+                          <P><a href="https://facebook.com" target="blank">Contacto</a></P>
+                          <img class="img-responsive" src="img/maracay.jpg">
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="profile">
+                          <br>
+                          <br>
+                          <P>Fecha: 07/10/2016</P>
+                          <p>Lugar: Parque Cultural de la Cibeles / al lado de la plaza la Cibeles</p>
+                          <p>Cover: 10$</p>
+                          <P><a href="https://facebook.com" target="blank">Contacto</a></P>
+                          <img class="img-responsive" src="img/maracay_1.jpg">
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="messages">
+                          <br>
+                          <br>
+                          <P>Fecha: 07/10/2016</P>
+                          <p>Lugar: Parque Cultural de la Cibeles / al lado de la plaza la Cibeles</p>
+                          <p>Cover: 10$</p>
+                          <P><a href="https://facebook.com" target="blank">Contacto</a></P>
+                          <img class="img-responsive" src="img/maracay_2.jpg">
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="settings">
+                          <br>
+                          <br>
+                          <P>Fecha: 07/10/2016</P>
+                          <p>Lugar: Parque Cultural de la Cibeles / al lado de la plaza la Cibeles</p>
+                          <p>Cover: 10$</p>
+                          <P><a href="https://facebook.com" target="blank">Contacto</a></P>
+                          <img class="img-responsive" src="img/maracay_3.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modal_maracay">
+            Maracay
+            </button>
+            <!-- modal Caracas-->
+            <div id="modal_caracas" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center">Presentaciones en Madrid</h4>
+                  </div>
+                  <div class="modal-body modificado">
+                    <P>Fecha: 07/10/2016</P>
+                    <p>Lugar: Parque Cultural de la Cibeles / al lado de la plaza la Cibeles</p>
+                    <p>Cover: 10$</p>
+                    <P><a href="https://facebook.com" target="blank">Contacto</a></P>
+                    <img class="img-responsive" src="img/hard_rock_caracas.jpg">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modal_caracas">
+            Caracas
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- sonido -->
+    <div class="container">
+      <h1 class="text-center padding_h1">Sonidos</h1>
+      <iframe width="100%" height="320" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/16195903&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
+      </iframe>
+    </div>
+    <!-- Ultimos tweets -->
+    <div class="container">
+      <h1 class="padding_h1">Ultimos Tweets</h1>
+      <a class="twitter-timeline" href="https://twitter.com/R10Rivas" data-widget-id="720339176932020224" width="400" height="300">>Tweets by @R10Rivas</a>
+    </div>
+    <!-- Pie de pagina -->
+    <footer>
+      <div class="container">
+        <ul class="list-inline">
+          <li><a href="http://twitter.com " target="blank"><i class="icon icon-twitter"></i> Twitter</a></li>
+          <li><a href="http://facebook.com" target="blank"><i class="icon icon-facebook-alt"></i> Facebook</a></li>
+          <li><a href="http://instagram.com" target="blank"><i class="icon icon-instagrem"></i> Instagram</a></li>
+          <li></li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/little_zoo.js"></script>
+  </body>
+</html>
